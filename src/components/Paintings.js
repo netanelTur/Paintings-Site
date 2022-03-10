@@ -2,7 +2,7 @@ import './Paintings.css';
 
 const Paintings = () => {
 	return (
-		<h1 className="name">Yeudit Englard</h1>
+		<h1 className="name">Yehudit Englard</h1>
 	);
 }
 
