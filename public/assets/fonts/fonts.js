@@ -1,25 +1,28 @@
 import { createGlobalStyle } from 'styled-components';
-import HelveticaNowDisplayBoldttf from './HelveticaNowDisplay-Bold.ttf';
-import HelveticaNowDisplayMediumttf from './HelveticaNowDisplay-Medium.ttf';
-import HelveticaNowDisplayBlackttf from './HelveticaNowDisplay-Black.ttf';
+
+import HelveticaNowDisplayBoldWoff from './HelveticaNowDisplay/HelveticaNowDisplayBold.woff';
+import HelveticaNowDisplayBoldWoff2 from './HelveticaNowDisplay/HelveticaNowDisplayBold.woff2';
+
+import HelveticaNowDisplayMediumWoff from './HelveticaNowDisplay/HelveticaNowDisplayMedium.woff';
+import HelveticaNowDisplayMediumWoff2 from './HelveticaNowDisplay/HelveticaNowDisplayMedium.woff2';
 
 export default createGlobalStyle`
   
     @font-face {
       font-family: 'HelveticaNowDisplayBold';
-      src: local("HelveticaNowDisplayBold"), url(${HelveticaNowDisplayBoldttf}) format('ttf');
+      src: url(${HelveticaNowDisplayBoldWoff2}) format('woff2'),
+      url(${HelveticaNowDisplayBoldWoff}) format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
     }
 
     @font-face {
-      font-family: 'HelveticaNowDisplayMedium';
-      src: url(${HelveticaNowDisplayMediumttf}) format('ttf'),
-      url(${HelveticaNowDisplayMediumtff}) format('ttf');
+      font-family: 'HelveticaNowDisplay';
+      src: url(${HelveticaNowDisplayMediumWoff2}) format('woff2'),
+      url(${HelveticaNowDisplayMediumWoff}) format('woff');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
     }
-
-	@font-face {
-		font-family: 'HelveticaNowDisplay-Black';
-		src: url(${HelveticaNowDisplayBlackttf}) format('ttf'),
-		url(${HelveticaNowDisplayBlacktff}) format('ttf');
-	}
-    
 `;
