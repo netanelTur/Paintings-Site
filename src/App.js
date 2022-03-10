@@ -1,8 +1,9 @@
 import './App.css';
+import Paintings from './components/Paintings';
 
 function App() {
   return (
-    <h1>netanel the gay</h1>
+    <Paintings />
   );
 }
 
