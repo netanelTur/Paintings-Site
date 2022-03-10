@@ -1,8 +1,8 @@
-import './App.css';
+import classes from './App.css';
 
 function App() {
   return (
-    <h1>netanel the gay</h1>
+    <h1 className={classes.name}>Yehudit Englard</h1>
   );
 }
 
