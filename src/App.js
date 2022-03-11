@@ -1,10 +1,16 @@
-import './App.css';
-import Paintings from './components/Paintings';
+import "./App.css";
+import renderWhatButton from "./components/renderWhatButton/renderWhatButton";
+import { useState } from "react";
 
-function App() {
+const App = () => {
+  const [selectedButton, setSelectedButton] = useState("My paintings");
+
   return (
-    <Paintings />
+    <div>
+      <h1 className="name">Yehudit Englard</h1>
+      <renderWhatButton />
+    </div>
   );
-}
+};
 
 export default App;
