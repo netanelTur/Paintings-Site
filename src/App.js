@@ -1,9 +1,16 @@
-import classes from './App.css';
+import "./App.css";
+import { renderWhatButton } from "./components/renderWhatButton/renderWhatButton";
+import { useState } from "react";
 
-function App() {
+const App = () => {
+  const [selectedButton, setSelectedButton] = useState("My paintings");
+
   return (
-    <h1 className={classes.name}>Yehudit Englard</h1>
+    <div>
+      <h1 className="name">Yehudit Englard</h1>
+      
+    </div>
   );
-}
+};
 
 export default App;
