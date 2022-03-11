@@ -1,16 +1,17 @@
 @font-face {
-  font-family: 'HelveticaNowDisplayBold';
-  src: url('/public/assets/fonts/HelveticaNowDisplayBold.woff2') format('woff2'),
-  url('/public/assets/fonts/HelveticaNowDisplayBold.woff') format('woff');
+  font-family: "HelveticaNowDisplayBold";
+  src: url("/public/assets/fonts/HelveticaNowDisplayBold.woff2") format("woff2"),
+    url("/public/assets/fonts/HelveticaNowDisplayBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNowDisplay';
-  src: url('/public/assets/fonts/HelveticaNowDisplayMedium.woff2') format('woff2'),
-  url('/public/assets/fonts/HelveticaNowDisplayMedium.woff') format('woff');
+  font-family: "HelveticaNowDisplay";
+  src: url("/public/assets/fonts/HelveticaNowDisplayMedium.woff2")
+      format("woff2"),
+    url("/public/assets/fonts/HelveticaNowDisplayMedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -22,11 +23,11 @@
 }
 
 body {
-  background-color: #F8F6F2;
+  background-color: #f8f6f2;
 }
 
 .name {
-	font-family: "HelveticaNowDisplayBold";
+  font-family: "HelveticaNowDisplayBold";
   top: 5px;
   left: 5px;
   position: absolute;
@@ -38,4 +39,8 @@ body {
   justify-content: center;
   margin-top: 85px;
   flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  
 }

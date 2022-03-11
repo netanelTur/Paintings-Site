@@ -19,3 +19,9 @@
 .active {
     color: #545454 !important;
 }
+
+@media (max-width: 768px) {
+  .navbar li a {
+    font-size: 17px;
+  }
+}

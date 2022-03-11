@@ -8,7 +8,7 @@ import About from "./components/About/About";
 
 const App = () => {
   return (
-    <>
+    <div className="container">
       <h1 className="name">Yehudit Englard</h1>
       <div className="router">
         <Router>
@@ -20,7 +20,7 @@ const App = () => {
             </Routes>
         </Router>
       </div>
-    </>
+    </div>
   );
 };
 
