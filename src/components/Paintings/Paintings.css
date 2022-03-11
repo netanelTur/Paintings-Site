@@ -1,0 +1,24 @@
+@font-face {
+	font-family: 'HelveticaNowDisplayBold';
+	src: url('/public/assets/fonts/HelveticaNowDisplayBold.woff2') format('woff2'),
+	url('/public/assets/fonts/HelveticaNowDisplayBold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HelveticaNowDisplay';
+	src: url('/public/assets/fonts/HelveticaNowDisplayMedium.woff2') format('woff2'),
+	url('/public/assets/fonts/HelveticaNowDisplayMedium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+.name {
+	font-family: "HelveticaNowDisplayBold";
+	position: absolute;
+	top: 5px;
+	left: 15px;
+}
