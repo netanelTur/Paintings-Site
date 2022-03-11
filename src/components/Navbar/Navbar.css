@@ -1,20 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 .navbar {
-  display: flex;
-  flex-direction: row;
   list-style-type: none;
   text-decoration: none;
+  padding-bottom: 50px;
+  flex-direction: row;
+  display: flex;
 }
 
 .navbar li a {
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
   text-decoration: none;
   color: #858585;
+  font-size: 24px;
   padding: 0 20px;
 }
 
 .active {
     color: #545454 !important;
+}
+
+@media (max-width: 768px) {
+  .navbar li a {
+    font-size: 17px;
+  }
 }
