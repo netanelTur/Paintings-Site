@@ -3,7 +3,6 @@ import "./Paintings.css";
 const Paintings = () => {
   return (
     <div class="row">
-      <div class="column">
         <div class="column">
           <img src="/assets/paintings/2216.jpg" alt="Snow" className="painting"/>
         </div>
@@ -43,7 +42,6 @@ const Paintings = () => {
         <div className="column">
           <img src="/assets/paintings/metaneltur.jpg" alt="matanel" className="painting"/>
         </div>
-      </div>
     </div>
   );
 };
