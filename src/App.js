@@ -1,5 +1,5 @@
 import "./App.css";
-import renderWhatButton from "./components/renderWhatButton/renderWhatButton";
+import { renderWhatButton } from "./components/renderWhatButton/renderWhatButton";
 import { useState } from "react";
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div>
       <h1 className="name">Yehudit Englard</h1>
-      <renderWhatButton />
+      
     </div>
   );
 };
