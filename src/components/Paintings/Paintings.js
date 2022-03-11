@@ -2,8 +2,7 @@ import "./Paintings.css";
 
 const Paintings = () => {
   return (
-    <div>
-    </div>
+  	<text>paintings</text>
   );
 };
 

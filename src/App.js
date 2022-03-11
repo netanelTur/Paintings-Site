@@ -1,15 +1,26 @@
 import "./App.css";
-import { renderWhatButton } from "./components/renderWhatButton/renderWhatButton";
-import { useState } from "react";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Paintings from "./components/Paintings/Paintings";
+import Contact from "./components/Contact/Contact";
+import About from "./components/About/About";
 
 const App = () => {
-  const [selectedButton, setSelectedButton] = useState("My paintings");
-
   return (
-    <div>
+    <>
       <h1 className="name">Yehudit Englard</h1>
-      
-    </div>
+      <div className="router">
+        <Router>
+          <Navbar />
+            <Routes>
+              <Route path="/" element={<Paintings />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+        </Router>
+      </div>
+    </>
   );
 };
 
