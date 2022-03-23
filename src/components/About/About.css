@@ -45,11 +45,17 @@
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .profile-img {
     margin-bottom: 50px;
     max-width: 350px;
     max-height: 350px;
+  }
+
+  .paragraph {
+    padding-left: 0;
   }
 }
