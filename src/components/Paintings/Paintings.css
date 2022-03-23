@@ -44,9 +44,3 @@
 .painting:hover {
   transform: scale(1.2);
 }
-
-@media (max-width: 768px) {
-  .container {
-    overflow-x: hidden;
-  }
-}
