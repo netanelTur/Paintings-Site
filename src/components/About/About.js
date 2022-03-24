@@ -1,8 +1,17 @@
 import "./About.css";
+import { motion } from "framer-motion";
+import { pageVariants, pageTransition } from "./../../animations.js";
 
 const About = () => {
   return (
-    <div className="container">
+    <motion.div
+      className="container"
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       <img
         src="/assets/images/yehudit.png"
         width="500"
@@ -29,7 +38,7 @@ const About = () => {
           Artists, and the Research of Women Art and Gender Association.
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

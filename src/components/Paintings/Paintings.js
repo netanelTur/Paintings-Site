@@ -1,8 +1,17 @@
 import "./Paintings.css";
+import { motion } from "framer-motion";
+import { pageVariants, pageTransition } from "./../../animations.js";
 
 const Paintings = () => {
   return (
-    <div className="container">
+    <motion.div
+      className="container"
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       <div class="row">
         <div class="column">
           <img
@@ -145,7 +154,7 @@ const Paintings = () => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
