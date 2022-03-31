@@ -5,7 +5,7 @@ import { pageVariants, pageTransition } from "./../../animations.js";
 const About = () => {
   return (
     <motion.div
-      className="container"
+      className="about-container"
       initial="initial"
       animate="in"
       exit="out"

@@ -17,7 +17,7 @@
   font-display: swap;
 }
 
-.container {
+.about-container {
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -45,7 +45,7 @@
 }
 
 @media (max-width: 768px) {
-  .container {
+  .about-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
