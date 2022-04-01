@@ -33,7 +33,15 @@
   float: left;
 }
 
-.painting {
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f8f6f2;
+}
+
+img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transition: transform 0.4s;
   border: 1px solid #000000;
@@ -41,6 +49,6 @@
   height: 350px;
 }
 
-.painting:hover {
+img:hover {
   transform: scale(1.2);
 }
