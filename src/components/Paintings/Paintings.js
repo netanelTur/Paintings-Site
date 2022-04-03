@@ -18,7 +18,7 @@ const Paintings = () => {
     <div>
       <Modal show={isVisible} onHide={handleModalClose} className="modal">
         <Modal.Body>
-          <img src={imgPath} />
+          <img src={imgPath} alt="Matanel"/>
         </Modal.Body>
         <Modal.Footer>
           <button onClick={handleModalClose}>Close</button>
