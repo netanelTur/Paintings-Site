@@ -21,24 +21,21 @@
   box-sizing: border-box;
 }
 
-.row {
+.row1 {
   justify-content: space-between;
   padding: 0 150px;
   flex-wrap: wrap;
   display: flex;
 }
 
-.column {
+.column1 {
   margin-bottom: 50px;
   float: left;
 }
 
-.modal {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #f8f6f2;
+.modalImage {
+	width: 100%;
+	height: auto;
 }
 
 img {
