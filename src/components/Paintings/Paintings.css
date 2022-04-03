@@ -34,8 +34,8 @@
 }
 
 .modalImage {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 
 img {
@@ -48,4 +48,10 @@ img {
 
 img:hover {
   transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  img:hover {
+    transform: unset;
+  }
 }

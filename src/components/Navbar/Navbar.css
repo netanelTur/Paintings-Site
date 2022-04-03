@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
-.navbar {
+.navbar1 {
   list-style-type: none;
   text-decoration: none;
   padding-bottom: 50px;
@@ -8,7 +8,7 @@
   display: flex;
 }
 
-.navbar li a {
+.navbar1 li a {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: #858585;
@@ -16,7 +16,7 @@
   padding: 0 20px;
 }
 
-.navbar li:hover {
+.navbar1 li:hover {
   transform: scale(1.1);
   transition: 0.3s;
 }
@@ -95,8 +95,8 @@
   color: #D2C6AC !important;
 }
 
-@media only screen and (max-width: 768px) {
-  .navbar {
+@media (max-width: 768px) {
+  .navbar1 {
     display: none;
   }
   

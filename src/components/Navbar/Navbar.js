@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
   <>
-    <ul className="navbar">
+    <ul className="navbar1">
         <li>
           <Link to="/" className={url === "/" ?" active" : ""}>My paintings</Link>
         </li>
