@@ -7,10 +7,12 @@ import { pageVariants, pageTransition } from "./../../animations.js";
 const Paintings = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [imgPath, setImgPath] = useState("");
+  const [alt, setAlt] = useState("");
 
-  const handleModalOpen = (path) => {
+  const handleModalOpen = (path, alt) => {
     setIsVisible(true);
     setImgPath(path);
+    setAlt(alt);
   };
   const handleModalClose = () => setIsVisible(false);
 
@@ -18,7 +20,7 @@ const Paintings = () => {
     <div>
       <Modal show={isVisible} onHide={handleModalClose} className="modal">
         <Modal.Body>
-          <img src={imgPath} />
+          <img src={imgPath} alt="Matanel"/>
         </Modal.Body>
         <Modal.Footer>
           <button onClick={handleModalClose}>Close</button>
@@ -41,16 +43,16 @@ const Paintings = () => {
             />
           </div>
           <div class="column">
-            <img src="/assets/paintings/2372.jpg" alt="Forest" onClick={() => handleModalOpen("/assets/paintings/2216.jpg")}/>
+            <img src="/assets/paintings/2372.jpg" alt="Forest" onClick={() => handleModalOpen("/assets/paintings/2216.jpg", "Matanel") }/>
           </div>
           <div className="column">
-            <img src="/assets/paintings/2435.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2435.jpg")}/>
+            <img src="/assets/paintings/2435.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2435.jpg", "Matanel")}/>
           </div>
           <div className="column">
-            <img src="/assets/paintings/2458.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2458.jpg")}/>
+            <img src="/assets/paintings/2458.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2458.jpg", "Matanel")}/>
           </div>
           <div className="column">
-            <img src="/assets/paintings/2542.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2542.jpg")}/>
+            <img src="/assets/paintings/2542.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2542.jpg", "Matanel")}/>
           </div>
           <div className="column">
             <img src="/assets/paintings/2544.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2544.jpg")}/>
