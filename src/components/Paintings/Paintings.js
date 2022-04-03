@@ -80,10 +80,10 @@ const Paintings = () => {
             <img src="/assets/paintings/9064.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/9064.jpg")}/>
           </div>
           <div className="column">
-            <img src="/assets/paintings/9130.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2216.jpg")}/>
+            <img src="/assets/paintings/9130.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/9130.jpg")}/>
           </div>
           <div className="column">
-            <img src="/assets/paintings/11910.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2216.jpg")}/>
+            <img src="/assets/paintings/11910.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/11910.jpg")}/>
           </div>
           <div className="column">
             <img src="/assets/paintings/15123.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2216.jpg")}/>
