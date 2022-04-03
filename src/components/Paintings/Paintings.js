@@ -7,12 +7,10 @@ import { pageVariants, pageTransition } from "./../../animations.js";
 const Paintings = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [imgPath, setImgPath] = useState("");
-  const [alt, setAlt] = useState("");
 
-  const handleModalOpen = (path, alt) => {
+  const handleModalOpen = (path) => {
     setIsVisible(true);
     setImgPath(path);
-    setAlt(alt);
   };
   const handleModalClose = () => setIsVisible(false);
 
@@ -43,16 +41,16 @@ const Paintings = () => {
             />
           </div>
           <div class="column">
-            <img src="/assets/paintings/2372.jpg" alt="Forest" onClick={() => handleModalOpen("/assets/paintings/2216.jpg", "Matanel") }/>
+            <img src="/assets/paintings/2372.jpg" alt="Forest" onClick={() => handleModalOpen("/assets/paintings/2216.jpg") }/>
           </div>
           <div className="column">
-            <img src="/assets/paintings/2435.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2435.jpg", "Matanel")}/>
+            <img src="/assets/paintings/2435.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2435.jpg")}/>
           </div>
           <div className="column">
-            <img src="/assets/paintings/2458.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2458.jpg", "Matanel")}/>
+            <img src="/assets/paintings/2458.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2458.jpg")}/>
           </div>
           <div className="column">
-            <img src="/assets/paintings/2542.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2542.jpg", "Matanel")}/>
+            <img src="/assets/paintings/2542.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2542.jpg")}/>
           </div>
           <div className="column">
             <img src="/assets/paintings/2544.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2544.jpg")}/>
