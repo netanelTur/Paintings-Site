@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "HelveticaNowDisplayBold";
+  src: url("/public/assets/fonts/HelveticaNowDisplayBold.woff2") format("woff2"),
+    url("/public/assets/fonts/HelveticaNowDisplayBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNowDisplay";
+  src: url("/public/assets/fonts/HelveticaNowDisplayMedium.woff2")
+      format("woff2"),
+    url("/public/assets/fonts/HelveticaNowDisplayMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.about-container {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.title {
+  font-family: "HelveticaNowDisplayBold";
+  font-size: 50px;
+}
+
+.paragraph {
+  font-family: "HelveticaNowDisplayBold";
+  text-align: left;
+  font-size: larger;
+  line-height: 45px;
+  padding-left: 50px;
+}
+
+.profile-img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-img {
+    margin-bottom: 50px;
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+  .paragraph {
+    padding-left: 0;
+  }
+}

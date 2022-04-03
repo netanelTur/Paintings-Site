@@ -1,0 +1,129 @@
+@font-face {
+	font-family: "HelveticaNowDisplayBold";
+	src: url("/public/assets/fonts/HelveticaNowDisplayBold.woff2") format("woff2"),
+	  url("/public/assets/fonts/HelveticaNowDisplayBold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+  
+@font-face {
+	font-family: "HelveticaNowDisplay";
+	src: url("/public/assets/fonts/HelveticaNowDisplayMedium.woff2")
+		format("woff2"),
+	  url("/public/assets/fonts/HelveticaNowDisplayMedium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+.contact-container {
+	background-color: white;
+	width: 900px;
+	height: 700px;
+	padding-left: 150px;
+	padding-top: 25px;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-title {
+	font-size: 48px;
+	font-family: "HelveticaNowDisplay";
+	color: #110E09;
+}
+
+.form-name {
+	margin-top: 50px;
+	width: 600px;
+	height: 60px;
+	color: #110E09;
+	padding-left: 43px;
+	font-family: "HelveticaNowDisplay";
+	font-size: 20px;
+	border-radius: 10px;
+	background-color: #F6F4EE;
+	border: none;
+}
+
+.form-email {
+	margin-top: 20px;
+	width: 600px;
+	height: 60px;
+	color: #110E09;
+	padding-left: 43px;
+	font-family: "HelveticaNowDisplay";
+	font-size: 20px;
+	border-radius: 10px;
+	background-color: #E4DDCD;
+	border: none;
+}
+
+.form-message {
+	margin-top: 20px;
+	padding-top: 15px;
+	width: 600px;
+	height: 250px;
+	color: #110E09;
+	padding-left: 43px;
+	font-family: "HelveticaNowDisplay";
+	font-size: 20px;
+	border-radius: 10px;
+	background-color: #D2C6AC;
+	border: none;
+	resize: none;
+}
+
+.form-button {
+	margin-left: -150px;
+	align-self: center;
+	margin-top: 40px;
+	width: 200px;
+	height: 70px;
+	border: none;
+	border-radius: 40px;
+	cursor: pointer;
+	font-family: "HelveticaNowDisplay";
+	font-size: 20px;
+	color: white;
+	background-color: #110E09;
+}
+
+.form-button:hover {
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+input:focus, textarea:focus {
+	outline-width: 2px;
+	outline-style: solid;
+	outline-color: #110E09;
+}
+
+::placeholder {
+	color: #110E09;
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #110E09;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: #110E09;
+}
+
+@media (max-width: 768px) {
+	.contact-container {
+		align-items: center;
+		padding-left: 0;
+		width: 90%;
+	}
+
+	input, textarea {
+		max-width: 90%;
+	}
+	
+	.form-button {
+		margin-left: 0;
+	}
+}
