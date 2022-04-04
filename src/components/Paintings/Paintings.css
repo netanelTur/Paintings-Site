@@ -35,7 +35,7 @@
 
 .modal-image {
   width: 100%;
-  height: 50vh;
+  height: 80vh;
 }
 
 .column1 img {
@@ -55,10 +55,13 @@
 .column1 img:hover {
   transform: scale(1.2);
 }
-
+*/
 @media (max-width: 768px) {
-  .column1 img:hover {
+  /*.column1 img:hover {
     transform: unset;
+  }*/
+
+  .modal-image {
+    height: auto;
   }
 }
-*/
