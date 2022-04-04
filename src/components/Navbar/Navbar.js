@@ -12,8 +12,11 @@ const Navbar = () => {
     setUrl(location.pathname);
   }, [location]);
 
+
   const toggleMobileMenu = () => {
     setActive(!isActive);
+
+    document.body.style.overflowY = isActive ? "hidden" : "initial";
   }
 
   return (
