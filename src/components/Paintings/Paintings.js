@@ -20,7 +20,7 @@ const Paintings = () => {
     <div>
       <Modal size="lg" show={isVisible} onHide={handleModalClose} className="modal">
         <Modal.Body>
-          <img src={imgPath} alt="Matanel" className="modalImage"/>
+          <img src={imgPath} alt="Matanel" className="modal-image"/>
         </Modal.Body>
         <ModalFooter>Think of me, 2004, Oil on Canvas, 80 X 100 cm</ModalFooter>
       </Modal>
