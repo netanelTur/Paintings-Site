@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Paintings from "./components/Paintings/Paintings";
@@ -8,6 +8,10 @@ import About from "./components/About/About";
 import { AnimatePresence } from "framer-motion";
 
 const App = () => {
+
+  useEffect(() => {
+    document.title = "Yehudit Englard";
+  }, []);
 
   return (
     <div className="main">
