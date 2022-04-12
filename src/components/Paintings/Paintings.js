@@ -93,6 +93,7 @@ const Paintings = () => {
             <img src="/assets/paintings/16741.jpg" alt="matanel" onClick={() => handleModalOpen("/assets/paintings/2216.jpg")}/>
           </div>
         </div>
+        <footer>&copy; Copyright 2022</footer>
       </motion.div>
     </div>
   );
