@@ -36,6 +36,13 @@ footer {
   display: flex;
 }
 
+.row1::after {
+  content: "";
+  flex: auto;
+  flex-basis: 350px;
+  flex-grow: 0;
+}
+
 .column1 {
   margin-bottom: 50px;
   float: left;
