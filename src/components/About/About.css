@@ -57,7 +57,7 @@
     max-height: 350px;
   }
 
-  .paragraph {
+  .paragraph, .title {
     padding-left: 0;
   }
 }
