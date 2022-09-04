@@ -1,10 +1,14 @@
-import "./App.css";
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
-import Paintings from "./components/Paintings/Paintings";
-import Contact from "./components/Contact/Contact";
-import About from "./components/About/About";
+import Navbar from "./components/Navbar";
+import Paintings from "./components/Paintings";
+import Contact from "./components/Contact";
+import About from "./components/About";
+import Login from "./components/Login";
+import Dashboard from "./components/Dashboard";
+import PrivateRoute from "./components/PrivateRoute";
+import ForgotPassword from "./components/ForgotPassword";
+import { AuthProvider } from "./contexts/AuthContext";
 import { AnimatePresence } from "framer-motion";
 
 const App = () => {
@@ -15,16 +19,25 @@ const App = () => {
 
   return (
     <div className="main">
-      <h1 className="name">Yehudit Englard</h1>
+      <h1 className="name-logo">Yehudit Englard</h1>
       <div className="router">
         <AnimatePresence>
           <Router>
             <Navbar />
-            <Routes>
-              <Route path="/" element={<Paintings />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/about" element={<About />} />
-            </Routes>
+            <AuthProvider>
+              <Routes>
+                <Route exact path="/" element={<Paintings />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/forgot-password" element={<ForgotPassword />} />
+                <Route path="/dashboard" element={
+                  <PrivateRoute>
+                    <Dashboard />
+                  </PrivateRoute>
+                } />
+              </Routes>
+            </AuthProvider>
           </Router>
         </AnimatePresence>
       </div>
