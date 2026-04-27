@@ -4,13 +4,13 @@ import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAbfgHZdevkhK_AcmguhzMX0RWevFuLs9k",
-  authDomain: "paintings-site.firebaseapp.com",
-  projectId: "paintings-site",
-  storageBucket: "paintings-site.appspot.com",
-  messagingSenderId: "969743493327",
-  appId: "1:969743493327:web:547e075a792d17683e6fba",
-  measurementId: "G-KMLSPB08YB"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
